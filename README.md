@@ -4,7 +4,7 @@ Key players:
 
 * [Vue3](https://vuejs.org/)
 	* [Options API](https://vuejs.org/guide/typescript/options-api)
-* [Vite](https://vite.dev/),
+* [Vite](https://vite.dev/)
 * [Mesh IoC](https://www.npmjs.com/package/mesh-ioc)
 
 
