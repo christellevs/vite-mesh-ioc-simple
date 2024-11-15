@@ -10,11 +10,11 @@ Key players:
 
 This README is split into 2 parts.
 
-# 1. Complex ongoing project
+## 1. Complex ongoing project
 
 More complex [experimental project](https://github.com/christellevs/vite-mesh-ioc)
 
-# 2. Simpler project:
+## 2. Simpler project:
 
 In case you're looking for something even simpler, without libraries support, etc, clone and run this repo:
 
@@ -26,7 +26,7 @@ And here's a more in depth explanation of the steps to set it up:
 
 ---
 
-## **Table of Contents**
+### **Table of Contents**
 
 1. [Project Setup](#1-project-setup)
 2. [Installing Dependencies](#2-installing-dependencies)
@@ -43,7 +43,7 @@ And here's a more in depth explanation of the steps to set it up:
 8. [Summary](#8-summary)
 
 ---
-## **1. Project Setup**
+### **1. Project Setup**
 
 Create a new directory for your project and navigate into it:
 
@@ -54,7 +54,7 @@ cd frontend
 
 ---
 
-## **2. Installing Dependencies**
+### **2. Installing Dependencies**
 
 Initialize a new npm project:
 
@@ -96,7 +96,7 @@ node_modules
 
 ---
 
-## **3. Project Structure**
+### **3. Project Structure**
 
 Final project directory should look like this:
 
@@ -117,7 +117,7 @@ frontend/
 ```
 ---
 
-## **4. Configuring TypeScript**
+### **4. Configuring TypeScript**
 
 Create a `tsconfig.json` file in the root directory with the following content:
 
@@ -153,7 +153,7 @@ Create a `tsconfig.json` file in the root directory with the following content:
 
 ---
 
-## **5. Configuring Vite**
+### **5. Configuring Vite**
 
 Create a `vite.config.ts` file in the root directory:
 
@@ -175,9 +175,9 @@ export default defineConfig({
 
 ---
 
-## **6. Creating Essential Files**
+### **6. Creating Essential Files**
 
-### **index.html**
+#### **index.html**
 
 Create an `index.html` file in the `src` directory:
 
@@ -194,7 +194,7 @@ Create an `index.html` file in the `src` directory:
   </body>
 </html>
 ```
-### **Create the provide utils**
+#### **Create the provide utils**
 
 Create a `utils` directory in `src`:
 
@@ -214,7 +214,7 @@ export function provide(alias: string) {
 }
 ```
 
-### **Create a Manager**
+#### **Create a Manager**
 
 Create a `managers` directory in `src`:
 
@@ -244,7 +244,7 @@ export class HelloWorldManager {
 }
 ```
 
-### **src/components/HelloWorld.vue**
+#### **src/components/HelloWorld.vue**
 
 Create a `HelloWorld.vue` file inside `src/components`:
 
@@ -291,7 +291,7 @@ export default {
 </style>
 ```
 
-### **src/main.ts**
+#### **src/main.ts**
 
 Create a `main.ts` file in the `src` directory:
 
@@ -346,7 +346,7 @@ Object.assign(globalThis, {
 ```
 ---
 
-## **7. Running the app**
+### **7. Running the app**
 
 Add vite scripts to `package.json`
 
@@ -365,9 +365,3 @@ npm run dev
 ```
 
 ---
-
-## **8. Summary**
-
-The above is a basic starter for a frontend apps that use Vue 3, Vite, MeshIoc and TypeScript.
-
-If you'd like to create something a bit more robust with libraries in place, please take a look at this repo.
